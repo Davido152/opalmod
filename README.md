@@ -1,8 +1,6 @@
 # opalmod
 Opal Mod adds Opal Gem, Opal Tools, Opal Armor and more!
 ```
--[Changelog]
-
 13.11.2020: 0.0.1 
   Additions
     Blocks
