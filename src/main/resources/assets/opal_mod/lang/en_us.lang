@@ -1,2 +1,14 @@
 //Items
 item.pure_opal.name=Pure Opal
+item.crude_opal.name=Crude Opal
+
+//Blocks
+tile.opal_block.name=Opal Block
+tile.opal_ore.name=Opal Ore
+
+//Tools
+item.opal_sword.name=Opal Sword
+item.opal_pickaxe.name=Opal Pickaxe
+item.opal_axe.name=Opal Axe
+item.opal_shovel.name=Opal Shovel
+item.opal_hoe.name=Opal Hoe

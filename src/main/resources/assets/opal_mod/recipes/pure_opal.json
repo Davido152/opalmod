@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "opal_mod:opal_block"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "opal_mod:pure_opal",
+        "count": 9
+    }
+}

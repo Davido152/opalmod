@@ -1,16 +1,17 @@
-package github.davido152.opalmod.items;
+package github.davido152.opalmod.items.tools;
 
 import github.davido152.opalmod.Main;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 
-public class ItemBase extends Item implements IHasModel
+public class ToolSword extends ItemSword implements IHasModel
 {
 
-	public ItemBase(String name, CreativeTabs tab)
+	public ToolSword(String name, ToolMaterial material, CreativeTabs tab)
 	{
+		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(tab);

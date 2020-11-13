@@ -1,5 +1,6 @@
 package github.davido152.opalmod;
 
+import github.davido152.opalmod.init.ModRecipes;
 import github.davido152.opalmod.proxy.CommonProxy;
 import github.davido152.opalmod.util.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -28,7 +29,7 @@ public class Main {
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		
+		ModRecipes.init();
 	}
 	
 	@EventHandler

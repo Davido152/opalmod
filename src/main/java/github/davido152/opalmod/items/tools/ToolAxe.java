@@ -1,16 +1,17 @@
-package github.davido152.opalmod.items;
+package github.davido152.opalmod.items.tools;
 
 import github.davido152.opalmod.Main;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.Item.ToolMaterial;
 
-public class ItemBase extends Item implements IHasModel
+public class ToolAxe extends ItemAxe implements IHasModel 
 {
-
-	public ItemBase(String name, CreativeTabs tab)
+	public ToolAxe(String name, ToolMaterial material, CreativeTabs tab)
 	{
+		super(material, 9.0f, -3.3f);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(tab);
@@ -23,5 +24,4 @@ public class ItemBase extends Item implements IHasModel
 	{
 		Main.proxy.registerItemRenderer(this, 0, "invemtory");
 	}
-
 }

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "OO",
+        " S",
+        " S"
+    ],
+    
+    "key":
+    {
+        "O":
+        {
+            "item": "opal_mod:pure_opal"
+        },
+       
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "opal_mod:opal_hoe",
+        "count": 1
+    }
+}
