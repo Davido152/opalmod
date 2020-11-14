@@ -1,3 +1,6 @@
+/**Template
+item.opal_.name=Opal */
+
 //Items
 item.pure_opal.name=Pure Opal
 item.crude_opal.name=Crude Opal
@@ -12,3 +15,9 @@ item.opal_pickaxe.name=Opal Pickaxe
 item.opal_axe.name=Opal Axe
 item.opal_shovel.name=Opal Shovel
 item.opal_hoe.name=Opal Hoe
+
+//Armour
+item.opal_helmet.name=Opal Helmet
+item.opal_chestplate.name=Opal Chestplate
+item.opal_leggings.name=Opal Leggings
+item.opal_boots.name=Opal Boots
