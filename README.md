@@ -3,6 +3,11 @@ Opal Mod adds Opal Gem, Opal Tools, Opal Armor and more!
 ```diff
 [Changelog]
 
+14.11.2020: 0.0.2
+  Additions
+    Items
+      Opal Armor
+        -has less protection and durability than Diamond Armor, but has better enchantibility
 13.11.2020: 0.0.1 
   Additions
     Blocks
