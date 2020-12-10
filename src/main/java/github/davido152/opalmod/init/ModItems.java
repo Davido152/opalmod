@@ -5,6 +5,8 @@ import java.util.List;
 
 import github.davido152.opalmod.items.ItemBase;
 import github.davido152.opalmod.items.armor.ArmorBase;
+import github.davido152.opalmod.items.food.FoodEffectBase;
+import github.davido152.opalmod.items.food.OpalApple;
 import github.davido152.opalmod.items.tools.ToolAxe;
 import github.davido152.opalmod.items.tools.ToolHoe;
 import github.davido152.opalmod.items.tools.ToolPickaxe;
@@ -12,6 +14,7 @@ import github.davido152.opalmod.items.tools.ToolSpade;
 import github.davido152.opalmod.items.tools.ToolSword;
 import github.davido152.opalmod.util.Reference;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -22,6 +25,7 @@ import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems 
@@ -51,5 +55,6 @@ public class ModItems
 	public static final Item OPAL_HELMET = new ArmorBase("opal_helmet", ARMOR_MATERIAL_OPAL, 1, EntityEquipmentSlot.HEAD, CreativeTabs.COMBAT);
 	
 	//Food
-
+	public static final Item OPAL_APPLE = new OpalApple("opal_apple", 4, 9.5f, false, new PotionEffect(MobEffects.HASTE, 3*(60*20), 1, false, true), new PotionEffect(MobEffects.NIGHT_VISION, 3*(60*20), 0, false, true));	
+	public static final Item OPAL_POPSICLE = new FoodEffectBase("opal_popsicle", 5, 6.0f, false, new PotionEffect(MobEffects.SATURATION, 6, 0, false, true));
 }

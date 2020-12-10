@@ -21,3 +21,7 @@ item.opal_helmet.name=Opal Helmet
 item.opal_chestplate.name=Opal Chestplate
 item.opal_leggings.name=Opal Leggings
 item.opal_boots.name=Opal Boots
+
+//Food
+item.opal_apple.name=Opal Apple
+item.opal_popsicle.name=Opal Popsicle

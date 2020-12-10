@@ -3,7 +3,7 @@
   "modid": "opal_mod",
   "name": "Opal Mod",
   "description": "Mod that adds Opal, Opal Tools, Opal Armor and more!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
