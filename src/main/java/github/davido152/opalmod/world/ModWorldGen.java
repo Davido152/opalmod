@@ -20,11 +20,23 @@ public class ModWorldGen implements IWorldGenerator
 		{
 			generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
 		}
+		
+		if (world.provider.getDimension() == -1) 
+		{
+			generateNether(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
+		}
 	}
 	
 	private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
 	{
-		generateOre(ModBlocks.OPAL_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ *16, 5, 20, random.nextInt(6) + 3, 3);
+		generateOre(ModBlocks.OPAL_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 9, 26, 3 + random.nextInt(5), 5);
+		generateOre(ModBlocks.FIRE_OPAL_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 5, 20, 1 + random.nextInt(5), 4);
+		generateOre(ModBlocks.MATRIX_OPAL_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 14, 17, 1 + random.nextInt(4), 3);
+	}
+	
+	private void generateNether(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
+	{
+		generateOre(ModBlocks.NETHER_FIRE_OPAL_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 28, 95, 3 + random.nextInt(5), 8);
 	}
 	
 	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances)

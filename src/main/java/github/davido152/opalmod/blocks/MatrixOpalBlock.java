@@ -4,9 +4,9 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class OpalBlock extends BlockBase
+public class MatrixOpalBlock extends BlockBase
 {
-	public OpalBlock(String name, Material material, CreativeTabs tab) 
+	public MatrixOpalBlock(String name, Material material, CreativeTabs tab) 
 	{
 		super(name, material, tab);
 		

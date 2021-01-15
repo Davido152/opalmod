@@ -2,7 +2,7 @@ package github.davido152.opalmod.util.handlers;
 
 import github.davido152.opalmod.init.ModBlocks;
 import github.davido152.opalmod.init.ModItems;
-import github.davido152.opalmod.util.IHasModel;
+import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;

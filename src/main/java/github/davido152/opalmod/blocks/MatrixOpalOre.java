@@ -12,31 +12,30 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
-public class OpalOre extends BlockBase
+public class MatrixOpalOre extends BlockBase
 {
+    public MatrixOpalOre(String name, Material material, CreativeTabs tab) 
+    {
+        super(name, material, tab);
 
-	public OpalOre(String name, Material material, CreativeTabs tab) 
-	{
-		super(name, material, tab);
-		
-		setCreativeTab(tab);
-		setSoundType(SoundType.STONE);
-		setHardness(3.8f);
-		setResistance(15.5f);
-		setHarvestLevel("pickaxe", 2);
-	}
-	
-	@Override
-	public Item getItemDropped(IBlockState state, Random rand, int fortune)
-	{
-		return ModItems.CRUDE_OPAL;
-	}
-	
-	public int quantityDroppedWithBonus(int fortune, Random random)
+        setCreativeTab(tab);
+        setSoundType(SoundType.STONE);
+        setHardness(3.8f);
+        setResistance(15.5f);
+        setHarvestLevel("pickaxe", 2);
+    }
+
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
+    {
+        return ModItems.CRUDE_MATRIX_OPAL;
+    }
+
+    public int quantityDroppedWithBonus(int fortune, Random random)
     {
         if (fortune > 0 && Item.getItemFromBlock(this) != this.getItemDropped((IBlockState)this.getBlockState().getValidStates().iterator().next(), random, fortune))
         {
-            int i = random.nextInt(fortune + 2) - 1;
+            int i = random.nextInt(fortune + 2) - 2;
 
             if (i < 0)
             {
@@ -50,10 +49,10 @@ public class OpalOre extends BlockBase
             return this.quantityDropped(random);
         }
     }
-        
+
     public void dropBlockAsItemWithChance(World worldIn, BlockPos pos, IBlockState state, float chance, int fortune)
     {
-    	super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
+        super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
 
         if (this.getItemDropped(state, worldIn.rand, fortune) != Item.getItemFromBlock(this))
         {

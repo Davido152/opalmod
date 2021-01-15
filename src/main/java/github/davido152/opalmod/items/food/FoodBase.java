@@ -2,7 +2,7 @@ package github.davido152.opalmod.items.food;
 
 import github.davido152.opalmod.Main;
 import github.davido152.opalmod.init.ModItems;
-import github.davido152.opalmod.util.IHasModel;
+import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemFood;
 
