@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "opal_mod:matrix_opal_ore" }
+    }
+}

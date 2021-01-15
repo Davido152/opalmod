@@ -3,9 +3,9 @@
     
     "pattern":
     [
-        "OO",
-        "SO",
-        "S "
+        "OOO",
+        "OAO",
+        "OOO"
     ],
     
     "key":
@@ -15,15 +15,15 @@
             "item": "opal_mod:pure_opal"
         },
        
-        "S":
+        "A":
         {
-            "item": "minecraft:stick"
+            "item": "minecraft:apple"
         }
     },
     
     "result":
     {
-        "item": "opal_mod:opal_axe",
+        "item": "opal_mod:opal_apple",
         "count": 1
     }
 }

@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "opal_mod:items/fire_opal_shovel"
+    }
+}
