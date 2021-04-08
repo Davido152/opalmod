@@ -45,3 +45,6 @@ item.opal_popsicle.name=Opal Popsicle
 
 //Tab
 itemGroup.tabOpalMod=Opal Mod
+
+//Entities
+entity.lystrosaurus.name=Lytrosaurus
