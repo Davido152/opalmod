@@ -1,6 +1,7 @@
 {
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "opal_mod:blocks/opalized_wood_log"
-   }
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "opal_mod:blocks/opalized_wood_log_top",
+        "side": "opal_mod:blocks/opalized_wood_log"
+    }
 }
