@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y":    { "model": "opal_mod:charred_opalized_wood_log" },
+        "axis=z":     { "model": "opal_mod:charred_opalized_wood_log", "x": 90 },
+        "axis=x":     { "model": "opal_mod:charred_opalized_wood_log", "x": 90, "y": 90 },
+        "axis=none":   { "model": "opal_mod:charred_opalized_wood_bark" }
+    }
+}

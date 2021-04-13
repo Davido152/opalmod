@@ -12,14 +12,14 @@ item.opalized_wood.name=Opalized Wood
 
 //Blocks
 tile.opal_block.name=Crystal Opal Block
-tile.opal_ore.name=Crystal Opal Ore
 tile.fire_opal_block.name=Fire Opal Block
-tile.fire_opal_ore.name=Fire Opal Ore
-tile.nether_fire_opal_ore.name=Nether Fire Opal Ore
 tile.matrix_opal_block.name=Matrix Opal Block
-tile.matrix_opal_ore.name=Matrix Opal Ore
 tile.opalized_wood_log.name=Opalized Wood Log
 tile.opalized_wood_planks.name=Opalized Wood Planks
+tile.pig_wool.name=Pig Wool
+tile.opal_ore.name=Opal Ore
+tile.fire_opal_ore.name=Fire Opal Ore
+tile.matrix_opal_ore.name=Matrix Opal Ore
 
 //Tools
 item.opal_sword.name=Crystal Opal Sword
@@ -44,7 +44,8 @@ item.opal_apple.name=Opal Apple
 item.opal_popsicle.name=Opal Popsicle
 
 //Tab
-itemGroup.tabOpalMod=Opal Mod
+itemGroup.opalmodtab=Opal Mod
 
 //Entities
-entity.lystrosaurus.name=Lytrosaurus
+entity.lystrosaurus.name=Lystrosaurus
+entity.wooly_pig.name=Wooly Pig

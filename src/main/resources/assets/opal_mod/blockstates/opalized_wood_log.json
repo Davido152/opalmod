@@ -1,5 +1,8 @@
 {
     "variants": {
-        "normal": { "model": "opal_mod:opalized_wood_log" }
+        "axis=y":    { "model": "opal_mod:opalized_wood_log" },
+        "axis=z":     { "model": "opal_mod:opalized_wood_log", "x": 90 },
+        "axis=x":     { "model": "opal_mod:opalized_wood_log", "x": 90, "y": 90 },
+        "axis=none":   { "model": "opal_mod:opalized_wood_bark" }
     }
 }

@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "opal_mod:dusty_dirt" },
+            { "model": "opal_mod:dusty_dirt", "y": 90 },
+            { "model": "opal_mod:dusty_dirt", "y": 180 },
+            { "model": "opal_mod:dusty_dirt", "y": 270 }
+        ]
+    }
+}
