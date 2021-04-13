@@ -6,9 +6,9 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class OpalBlock extends BlockBase
 {
-	public OpalBlock(String name, Material material, CreativeTabs tab) 
+	public OpalBlock(String name, Material material) 
 	{
-		super(name, material, tab);
+		super(name, material);
 		
 		setSoundType(SoundType.METAL);
 		setHardness(5.0f);

@@ -26,6 +26,12 @@ public class EntityLystrosaurus extends EntityCow
 		this.setSize(0.9f, 1.0f);
 	}
 	
+	public EntityLystrosaurus(World world, double x, double y, double z) 
+	{
+		this(world);
+		this.setPosition(x, y, z);
+	}
+	
 	@Override
 	protected void applyEntityAttributes() 
 	{
@@ -61,3 +67,5 @@ public class EntityLystrosaurus extends EntityCow
 		return SoundEvents.ENTITY_COW_DEATH;
 	}
 }
+
+

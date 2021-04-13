@@ -6,9 +6,9 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class OpalizedWoodPlanks extends BlockBase
 {
-	public OpalizedWoodPlanks(String name, Material material, CreativeTabs tab) 
+	public OpalizedWoodPlanks(String name, Material material) 
 	{
-		super(name, material, tab);
+		super(name, material);
 		
 		setSoundType(SoundType.WOOD);
 		setHardness(2.5f);

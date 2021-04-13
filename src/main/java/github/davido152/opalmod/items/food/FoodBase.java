@@ -15,7 +15,7 @@ public class FoodBase extends ItemFood implements IHasModel
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.FOOD);
+		setCreativeTab(Main.opalmodtab);
 		
 		ModItems.ITEMS.add(this);
 	}

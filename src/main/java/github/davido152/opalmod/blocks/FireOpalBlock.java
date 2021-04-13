@@ -12,9 +12,9 @@ import net.minecraft.world.World;
 
 public class FireOpalBlock extends BlockBase 
 {
-    public FireOpalBlock(String name, Material material, CreativeTabs tab) 
+    public FireOpalBlock(String name, Material material) 
     {
-        super(name, material, tab);
+        super(name, material);
 
         setSoundType(SoundType.METAL);
         setHardness(5.0f);

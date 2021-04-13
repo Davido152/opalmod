@@ -3,6 +3,7 @@ package github.davido152.opalmod.entity.model;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 
@@ -20,6 +21,8 @@ public class ModelLystrosaurus extends ModelBase
 	private final ModelRenderer leg1;
 	private final ModelRenderer leg2;
 	private final ModelRenderer leg3;
+    protected float childYOffset = 4.0F;
+    protected float childZOffset = 4.0F;
 
 	public ModelLystrosaurus() 
 	{
@@ -93,12 +96,31 @@ public class ModelLystrosaurus extends ModelBase
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) 
 	{
-		body.render(f5);
-		head.render(f5);
-		leg0.render(f5);
-		leg1.render(f5);
-		leg2.render(f5);
-		leg3.render(f5);
+		if (this.isChild) {
+            float f6 = 2.0F;
+            
+            GlStateManager.pushMatrix();
+            GlStateManager.translate(0.0F, this.childYOffset * f5, this.childZOffset * f5);
+            this.head.render(f5);
+            GlStateManager.popMatrix();
+            GlStateManager.pushMatrix();
+            GlStateManager.scale(0.65F, 0.65F, 0.65F);
+            GlStateManager.translate(0.0F, 12.0F * f5, 0.0F);
+            this.body.render(f5);
+            this.leg0.render(f5);
+            this.leg1.render(f5);
+            this.leg2.render(f5);
+            this.leg3.render(f5);
+            GlStateManager.popMatrix();
+		}
+		else {
+			body.render(f5);
+			head.render(f5);
+			leg0.render(f5);
+			leg1.render(f5);
+			leg2.render(f5);
+			leg3.render(f5);
+		}
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) 
@@ -112,9 +134,9 @@ public class ModelLystrosaurus extends ModelBase
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) 
 	{
 		this.leg1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662f) * 1.4f * limbSwingAmount;
-		this.leg3.rotateAngleX = MathHelper.cos(limbSwing * 0.6662f) * 1.4f * limbSwingAmount;
+		this.leg2.rotateAngleX = MathHelper.cos(limbSwing * 0.6662f) * 1.4f * limbSwingAmount;
 		this.leg0.rotateAngleX = MathHelper.cos(limbSwing * 0.6662f + (float)Math.PI) * 1.4f * limbSwingAmount;
-		this.leg2.rotateAngleX = MathHelper.cos(limbSwing * 0.6662f + (float)Math.PI) * 1.4f * limbSwingAmount;
+		this.leg3.rotateAngleX = MathHelper.cos(limbSwing * 0.6662f + (float)Math.PI) * 1.4f * limbSwingAmount;
 		this.tail.rotateAngleZ = MathHelper.cos(limbSwing * 0.6662F) * 0.7F * limbSwingAmount;
 		this.head.rotateAngleY = netHeadYaw * 0.017453292f;
 		this.head.rotateAngleX = headPitch * 0.017453292f;

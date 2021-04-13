@@ -15,11 +15,10 @@ import net.minecraft.world.World;
 public class OpalOre extends BlockBase
 {
 
-	public OpalOre(String name, Material material, CreativeTabs tab) 
+	public OpalOre(String name, Material material) 
 	{
-		super(name, material, tab);
-		
-		setCreativeTab(tab);
+		super(name, material);
+
 		setSoundType(SoundType.STONE);
 		setHardness(3.8f);
 		setResistance(15.5f);

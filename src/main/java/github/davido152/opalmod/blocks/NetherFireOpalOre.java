@@ -15,11 +15,10 @@ import net.minecraft.world.World;
 
 public class NetherFireOpalOre extends BlockBase
 {
-    public NetherFireOpalOre(String name, Material material, CreativeTabs tab) 
+    public NetherFireOpalOre(String name, Material material) 
     {
-        super(name, material, tab);
+        super(name, material);
 
-        setCreativeTab(tab);
         setSoundType(SoundType.STONE);
         setHardness(3.8f);
         setResistance(15.5f);

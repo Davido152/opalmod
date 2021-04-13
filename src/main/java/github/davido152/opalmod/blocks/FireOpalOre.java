@@ -15,11 +15,10 @@ import net.minecraft.world.World;
 
 public class FireOpalOre extends BlockBase 
 {
-    public FireOpalOre(String name, Material material, CreativeTabs tab) 
+    public FireOpalOre(String name, Material material) 
     {
-        super(name, material, tab);
+        super(name, material);
 
-        setCreativeTab(tab);
         setSoundType(SoundType.STONE);
         setHardness(3.8f);
         setResistance(15.5f);

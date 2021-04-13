@@ -1,7 +1,9 @@
 package github.davido152.opalmod.util.handlers;
 
 import github.davido152.opalmod.entity.EntityLystrosaurus;
+import github.davido152.opalmod.entity.EntityWoolyPig;
 import github.davido152.opalmod.entity.render.RenderLystrosaurus;
+import github.davido152.opalmod.entity.render.RenderWoolyPig;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
@@ -17,6 +19,14 @@ public class RenderHandler
 			public Render<? super EntityLystrosaurus> createRenderFor(RenderManager manager) 
 			{
 				return new RenderLystrosaurus(manager);
+			}	
+		});
+		RenderingRegistry.registerEntityRenderingHandler(EntityWoolyPig.class, new IRenderFactory<EntityWoolyPig>()
+		{
+			@Override
+			public Render<? super EntityWoolyPig> createRenderFor(RenderManager manager) 
+			{
+				return new RenderWoolyPig(manager);
 			}	
 		});
 	}
