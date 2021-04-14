@@ -19,7 +19,14 @@ tile.opalized_wood_planks.name=Opalized Wood Planks
 tile.pig_wool.name=Pig Wool
 tile.opal_ore.name=Opal Ore
 tile.fire_opal_ore.name=Fire Opal Ore
+tile.nether_fire_opal_ore.name=Nether Fire Opal Ore
+tile.opalized_wood_log.name=Opalized Wood Log
+tile.charred_opalized_wood_log.name=Charred Opalized Wood Log
+tile.opalized_wood_sapling.name=Opalized Wood Sapling
+tile.dusty_dirt.name=Dusty Dirt
 tile.matrix_opal_ore.name=Matrix Opal Ore
+tile.opalized_wood_leaves.name=Opalized Wood Leaves
+
 
 //Tools
 item.opal_sword.name=Crystal Opal Sword

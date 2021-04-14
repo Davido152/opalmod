@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "F",
+        "S",
+        "S"
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "opal_mod:pure_fire_opal"
+        },
+       
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "opal_mod:fire_opal_shovel",
+        "count": 1
+    }
+}
