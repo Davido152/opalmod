@@ -1,6 +1,6 @@
 package github.davido152.opalmod.blocks;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModBlocks;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
@@ -17,7 +17,7 @@ public class BlockBase extends Block implements IHasModel
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.opalmodtab);
+		setCreativeTab(OpalMod.opalmodtab);
 		
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -26,6 +26,6 @@ public class BlockBase extends Block implements IHasModel
 	@Override
 	public void registerModels() 
 	{	
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		OpalMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 }

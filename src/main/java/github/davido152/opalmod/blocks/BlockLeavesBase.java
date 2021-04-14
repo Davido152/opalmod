@@ -3,7 +3,7 @@ package github.davido152.opalmod.blocks;
 import java.util.List;
 import java.util.Random;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModBlocks;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
@@ -33,7 +33,7 @@ public class BlockLeavesBase extends BlockLeaves implements IHasModel
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setSoundType(SoundType.PLANT);
-		setCreativeTab(Main.opalmodtab);
+		setCreativeTab(OpalMod.opalmodtab);
 		setDefaultState(this.blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
 				
 		ModBlocks.BLOCKS.add(this);
@@ -97,6 +97,6 @@ public class BlockLeavesBase extends BlockLeaves implements IHasModel
 	@Override
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		OpalMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 }

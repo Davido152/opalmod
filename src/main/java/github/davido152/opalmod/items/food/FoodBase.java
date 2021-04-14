@@ -1,6 +1,6 @@
 package github.davido152.opalmod.items.food;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,7 +15,7 @@ public class FoodBase extends ItemFood implements IHasModel
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(Main.opalmodtab);
+		setCreativeTab(OpalMod.opalmodtab);
 		
 		ModItems.ITEMS.add(this);
 	}
@@ -23,6 +23,6 @@ public class FoodBase extends ItemFood implements IHasModel
 	@Override
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(this, 0, "inventory");
+		OpalMod.proxy.registerItemRenderer(this, 0, "inventory");
 	}
 }

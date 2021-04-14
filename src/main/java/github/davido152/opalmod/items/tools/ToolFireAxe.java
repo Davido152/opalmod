@@ -1,6 +1,6 @@
 package github.davido152.opalmod.items.tools;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
@@ -32,6 +32,6 @@ public class ToolFireAxe extends ItemAxe implements IHasModel
 	@Override
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(this, 0, "invemtory");
+		OpalMod.proxy.registerItemRenderer(this, 0, "invemtory");
 	}
 }

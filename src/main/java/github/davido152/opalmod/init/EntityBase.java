@@ -2,7 +2,7 @@ package github.davido152.opalmod.init;
 
 import com.google.common.reflect.Reflection;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.entity.EntityLystrosaurus;
 import github.davido152.opalmod.entity.EntityWoolyPig;
 import github.davido152.opalmod.util.Reference;
@@ -29,6 +29,6 @@ public class EntityBase
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2)
 	{
-		EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID + ":" + name), entity, name, id, Main.Instance, range, 1, true, color1, color2);
+		EntityRegistry.registerModEntity(new ResourceLocation(Reference.MOD_ID + ":" + name), entity, name, id, OpalMod.Instance, range, 1, true, color1, color2);
 	}
 }

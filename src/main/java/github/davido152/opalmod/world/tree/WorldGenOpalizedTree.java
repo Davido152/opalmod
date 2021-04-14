@@ -23,13 +23,13 @@ public class WorldGenOpalizedTree extends WorldGenAbstractTree
 	public WorldGenOpalizedTree() 
 	{
 		super(false);
-		this.minHeight = 5;
+		this.minHeight = 4;
 	}
 
 	@Override
 	public boolean generate(World world, Random rand, BlockPos pos) 
 	{
-		int height = this.minHeight + rand.nextInt(3);
+		int height = this.minHeight + rand.nextInt(2);
 		boolean flag = true;
 		
 		int x = pos.getX();

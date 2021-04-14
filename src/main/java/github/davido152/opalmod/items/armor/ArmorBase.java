@@ -1,6 +1,6 @@
 package github.davido152.opalmod.items.armor;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
@@ -23,7 +23,7 @@ public class ArmorBase extends ItemArmor implements IHasModel {
 	@Override
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(this, 0, "invemtory");
+		OpalMod.proxy.registerItemRenderer(this, 0, "invemtory");
 	}
 
 }

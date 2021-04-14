@@ -2,7 +2,7 @@ package github.davido152.opalmod.blocks;
 
 import java.util.Random;
 
-import github.davido152.opalmod.Main;
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModBlocks;
 import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
@@ -33,7 +33,7 @@ public class BlockSaplingBase extends BlockBush implements IGrowable, IHasModel
     	setUnlocalizedName(name);
 		setRegistryName(name);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(STAGE, Integer.valueOf(0)));
-		setCreativeTab(Main.opalmodtab);
+		setCreativeTab(OpalMod.opalmodtab);
 				
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -88,7 +88,7 @@ public class BlockSaplingBase extends BlockBush implements IGrowable, IHasModel
 	@Override
 	public void registerModels() 
 	{
-		Main.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
+		OpalMod.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
 	}
 	
 	//Tree Code
