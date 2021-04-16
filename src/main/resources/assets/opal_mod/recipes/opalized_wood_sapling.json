@@ -3,28 +3,28 @@
     
     "pattern":
     [
-        "O",
-        "O",
-        "S"
+        "OOO",
+        "OSO",
+        "OOO"
     ],
     
     "key":
     {
         "O":
         {
-            "item": "opal_mod:pure_opal"
+            "item": "opal_mod:opalized_wood"
         },
        
         "S":
         {
             "type": "forge:ore_dict",
-            "ore": "woodStick"
+            "ore": "treeSapling"
         }
     },
     
     "result":
     {
-        "item": "opal_mod:opal_sword",
+        "item": "opal_mod:opalized_wood_sapling",
         "count": 1
     }
 }

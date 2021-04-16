@@ -3,28 +3,26 @@
     
     "pattern":
     [
-        "O",
-        "O",
+        "F",
         "S"
     ],
     
     "key":
     {
-        "O":
+        "F":
         {
-            "item": "opal_mod:pure_opal"
+            "item": "minecraft:flint"
         },
-       
+        
         "S":
         {
-            "type": "forge:ore_dict",
-            "ore": "woodStick"
+            "item": "minecraft:stone"
         }
     },
     
     "result":
     {
-        "item": "opal_mod:opal_sword",
+        "item": "opal_mod:sharpening_stone",
         "count": 1
     }
 }
