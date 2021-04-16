@@ -12,4 +12,5 @@ public class Reference
 	
 	public static final int ENTITY_LYSTROSAURUS = 120;
 	public static final int ENTITY_WOOLY_PIG = 121;
+	public static final int GUI_PURIFIER = 0;
 }

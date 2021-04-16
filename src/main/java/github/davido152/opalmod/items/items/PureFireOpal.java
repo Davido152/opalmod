@@ -35,4 +35,10 @@ public class PureFireOpal extends Item implements IHasModel
 	{
 		OpalMod.proxy.registerItemRenderer(this, 0, "invemtory");
 	}
+	
+	@Override
+	public int getItemBurnTime(ItemStack itemStack)
+	{
+		return 6400;
+	}
 } 

@@ -17,6 +17,7 @@ import github.davido152.opalmod.blocks.OpalizedWoodLog;
 import github.davido152.opalmod.blocks.OpalizedWoodPlanks;
 import github.davido152.opalmod.blocks.OpalizedWoodSapling;
 import github.davido152.opalmod.blocks.PigWool;
+import github.davido152.opalmod.blocks.purifier.BlockPurifier;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -44,4 +45,7 @@ public class ModBlocks
     public static final Block OPALIZED_WOOD_LEAVES = new OpalizedWoodLeaves("opalized_wood_leaves");
     public static final Block OPALIZED_WOOD_SAPLING = new OpalizedWoodSapling("opalized_wood_sapling", Material.PLANTS);
     public static final Block CHARRED_OPALIZED_WOOD_LOG = new CharredOpalizedWoodLog("charred_opalized_wood_log", Material.WOOD); 
+    
+    //Tile Entity
+    public static final Block PURIFIER = new BlockPurifier("purifier", Material.ROCK);
 }
