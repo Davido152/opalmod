@@ -1,5 +1,6 @@
 package github.davido152.opalmod.blocks;
 
+import github.davido152.opalmod.init.BlockBase;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

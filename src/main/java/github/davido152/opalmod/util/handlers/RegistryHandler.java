@@ -1,8 +1,12 @@
 package github.davido152.opalmod.util.handlers;
 
+import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.BiomeBase;
+import github.davido152.opalmod.init.EntityBase;
 import github.davido152.opalmod.init.ModBlocks;
 import github.davido152.opalmod.init.ModItems;
+import github.davido152.opalmod.init.ModRecipes;
+import github.davido152.opalmod.util.compat.OreDictionaryCompat;
 import github.davido152.opalmod.util.interfaces.IHasModel;
 import github.davido152.opalmod.world.gen.WorldGenCustomOres;
 import github.davido152.opalmod.world.gen.WorldGenCustomTrees;
@@ -12,6 +16,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @EventBusSubscriber
@@ -58,5 +63,24 @@ public class RegistryHandler
 		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
 		
 		BiomeBase.registerBiomes();
+	}
+	
+	public static void preInitRegistries()
+	{
+		EntityBase.registerEntities();
+		RenderHandler.registerEntityRenders();
+		RegistryHandler.otherRegistries();
+	}
+	
+	public static void initRegistries()
+	{
+		ModRecipes.init();
+		OreDictionaryCompat.registerOres();
+		NetworkRegistry.INSTANCE.registerGuiHandler(OpalMod.Instance, new GuiHandler());
+	}
+	
+	public static void postInitRegistries()
+	{
+
 	}
 }

@@ -25,6 +25,8 @@ public class PurifierRecipes
 	private PurifierRecipes() 
 	{
 		addPurifierRecipe(new ItemStack(ModItems.CRUDE_OPAL), new ItemStack(ModItems.SHARPENING_STONE), new ItemStack(ModItems.PURE_OPAL), 0.8f);
+		addPurifierRecipe(new ItemStack(ModItems.CRUDE_FIRE_OPAL), new ItemStack(ModItems.SHARPENING_STONE), new ItemStack(ModItems.PURE_FIRE_OPAL), 0.8f);
+		addPurifierRecipe(new ItemStack(ModItems.CRUDE_MATRIX_OPAL), new ItemStack(ModItems.SHARPENING_STONE), new ItemStack(ModItems.PURE_MATRIX_OPAL), 0.8f);
 	}
 
 	

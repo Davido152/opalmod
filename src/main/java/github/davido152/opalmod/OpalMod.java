@@ -35,23 +35,18 @@ public class OpalMod {
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event)
 	{
-		//GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
-		EntityBase.registerEntities();
-		RenderHandler.registerEntityRenders();
-		RegistryHandler.otherRegistries();
+		RegistryHandler.preInitRegistries();
 	}
 	
 	@EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
-		ModRecipes.init();
-		OreDictionaryCompat.registerOres();
-		NetworkRegistry.INSTANCE.registerGuiHandler(OpalMod.Instance, new GuiHandler());
+		RegistryHandler.initRegistries();
 	}
 	
 	@EventHandler
 	public static void postinit(FMLPostInitializationEvent event)
 	{
-		
+		RegistryHandler.postInitRegistries();
 	}
 }

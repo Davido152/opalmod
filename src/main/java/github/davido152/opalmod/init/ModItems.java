@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import github.davido152.opalmod.OpalMod;
-import github.davido152.opalmod.items.ItemBase;
+import github.davido152.opalmod.items.ItemSharpeningStone;
+import github.davido152.opalmod.items.PureFireOpal;
 import github.davido152.opalmod.items.armor.ArmorBase;
 import github.davido152.opalmod.items.food.OpalApple;
 import github.davido152.opalmod.items.food.OpalPopsicle;
-import github.davido152.opalmod.items.items.PureFireOpal;
 import github.davido152.opalmod.items.tools.ToolAxe;
 import github.davido152.opalmod.items.tools.ToolFireAxe;
 import github.davido152.opalmod.items.tools.ToolFireHoe;
@@ -20,7 +20,6 @@ import github.davido152.opalmod.items.tools.ToolPickaxe;
 import github.davido152.opalmod.items.tools.ToolSpade;
 import github.davido152.opalmod.items.tools.ToolSword;
 import github.davido152.opalmod.util.Reference;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -31,7 +30,6 @@ import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
@@ -41,12 +39,12 @@ public class ModItems
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//Materials
-	public static final ToolMaterial MATERIAL_OPAL = EnumHelper.addToolMaterial("material_opal", 3, 1283, 9.5f, 3.5f, 15);
-	public static final ArmorMaterial ARMOR_MATERIAL_OPAL = EnumHelper.addArmorMaterial("armor_material_opal", Reference.MOD_ID + ":opal", 20, new int[] {3, 5, 7, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0f);
-	public static final ToolMaterial MATERIAL_FIRE_OPAL = EnumHelper.addToolMaterial("material_fire_opal", 3, 1283, 9.5f, 3.5f, 15);
-	public static final ArmorMaterial ARMOR_MATERIAL_FIRE_OPAL = EnumHelper.addArmorMaterial("armor_material_opal", Reference.MOD_ID + ":fire_opal", 20, new int[] {3, 5, 7, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0f);
-	public static final ToolMaterial MATERIAL_MATRIX_OPAL = EnumHelper.addToolMaterial("material_fire_opal", 3, 1283, 9.5f, 3.5f, 15);
-	public static final ArmorMaterial ARMOR_MATERIAL_MATRIX_OPAL = EnumHelper.addArmorMaterial("armor_material_opal", Reference.MOD_ID + ":matrix_opal", 20, new int[] {3, 5, 7, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0f);
+	public static final ToolMaterial MATERIAL_OPAL = EnumHelper.addToolMaterial("material_opal", 3, 1283, 9.5f, 3.5f, 16);
+	public static final ArmorMaterial ARMOR_MATERIAL_OPAL = EnumHelper.addArmorMaterial("armor_material_opal", Reference.MOD_ID + ":opal", 27, new int[] {3, 5, 7, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0f);
+	public static final ToolMaterial MATERIAL_FIRE_OPAL = EnumHelper.addToolMaterial("material_fire_opal", 3, 1873, 8.0f, 3.0f, 10);
+	public static final ArmorMaterial ARMOR_MATERIAL_FIRE_OPAL = EnumHelper.addArmorMaterial("armor_material_fire_opal", Reference.MOD_ID + ":fire_opal", 34, new int[] {3, 6, 8, 3}, 9, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5f);
+	public static final ToolMaterial MATERIAL_MATRIX_OPAL = EnumHelper.addToolMaterial("material_matrix_opal", 3, 1795, 9.0f, 3.5f, 19);
+	public static final ArmorMaterial ARMOR_MATERIAL_MATRIX_OPAL = EnumHelper.addArmorMaterial("armor_material_matrix_opal", Reference.MOD_ID + ":matrix_opal", 36, new int[] {3, 6, 8, 3}, 13, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0f);
 	
 	//Items
 	public static final Item PURE_OPAL = new ItemBase("pure_opal", OpalMod.opalmodtab);
@@ -56,7 +54,7 @@ public class ModItems
 	public static final Item PURE_MATRIX_OPAL = new ItemBase("pure_matrix_opal", OpalMod.opalmodtab);
 	public static final Item CRUDE_MATRIX_OPAL = new ItemBase("crude_matrix_opal", OpalMod.opalmodtab);
 	public static final Item OPALIZED_WOOD = new ItemBase("opalized_wood", OpalMod.opalmodtab);
-	public static final Item SHARPENING_STONE = new ItemBase("sharpening_stone", OpalMod.opalmodtab);
+	public static final Item SHARPENING_STONE = new ItemSharpeningStone("sharpening_stone", OpalMod.opalmodtab);
 	
 	//Tools
 	public static final ItemSword OPAL_SWORD = new ToolSword("opal_sword", MATERIAL_OPAL, OpalMod.opalmodtab);
@@ -76,7 +74,7 @@ public class ModItems
 	public static final ItemPickaxe MATRIX_OPAL_PICKAXE = new ToolPickaxe("matrix_opal_pickaxe", MATERIAL_MATRIX_OPAL, OpalMod.opalmodtab);
 	public static final ItemAxe MATRIX_OPAL_AXE = new ToolAxe("matrix_opal_axe", MATERIAL_MATRIX_OPAL, OpalMod.opalmodtab);
 	public static final ItemHoe MATRIX_OPAL_HOE = new ToolHoe("matrix_opal_hoe", MATERIAL_MATRIX_OPAL, OpalMod.opalmodtab);
-	
+
 	//Armour
 	public static final Item OPAL_BOOTS = new ArmorBase("opal_boots", ARMOR_MATERIAL_OPAL, 1, EntityEquipmentSlot.FEET, OpalMod.opalmodtab);
 	public static final Item OPAL_LEGGINGS = new ArmorBase("opal_leggings", ARMOR_MATERIAL_OPAL, 2, EntityEquipmentSlot.LEGS, OpalMod.opalmodtab);

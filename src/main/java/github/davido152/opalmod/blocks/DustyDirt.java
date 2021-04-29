@@ -2,6 +2,7 @@ package github.davido152.opalmod.blocks;
 
 import java.util.Random;
 
+import github.davido152.opalmod.init.BlockBase;
 import net.minecraft.block.BlockDirt;
 import net.minecraft.block.BlockGrass;
 import net.minecraft.block.SoundType;

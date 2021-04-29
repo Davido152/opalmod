@@ -3,7 +3,7 @@ package github.davido152.opalmod.blocks.purifier;
 import java.util.Random;
 
 import github.davido152.opalmod.OpalMod;
-import github.davido152.opalmod.blocks.BlockBase;
+import github.davido152.opalmod.init.BlockBase;
 import github.davido152.opalmod.init.ModBlocks;
 import github.davido152.opalmod.util.Reference;
 import net.minecraft.block.BlockHorizontal;
@@ -16,9 +16,8 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -29,8 +28,6 @@ import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
 
 public class BlockPurifier extends BlockBase implements ITileEntityProvider
 {
@@ -41,6 +38,8 @@ public class BlockPurifier extends BlockBase implements ITileEntityProvider
 		super(name, material);
 		
 		setSoundType(SoundType.STONE);
+		setHardness(blockHardness);
+		setResistance(blockResistance);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
 	}
 	
@@ -55,6 +54,17 @@ public class BlockPurifier extends BlockBase implements ITileEntityProvider
 	{
 		return new ItemStack((ModBlocks.PURIFIER));
 	}
+	
+    @Override
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state)
+    {
+        TileEntityPurifier tileentity = (TileEntityPurifier)worldIn.getTileEntity(pos);
+		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(0)));
+		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(1)));
+		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(2)));
+		worldIn.spawnEntity(new EntityItem(worldIn, pos.getX(), pos.getY(), pos.getZ(), tileentity.handler.getStackInSlot(3)));
+        super.breakBlock(worldIn, pos, state);
+    }
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) 
@@ -117,19 +127,6 @@ public class BlockPurifier extends BlockBase implements ITileEntityProvider
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) 
 	{
 		worldIn.setBlockState(pos, this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
-	}
-	
-	@Override
-	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) 
-	{
-		TileEntityPurifier tileentity = (TileEntityPurifier)worldIn.getTileEntity(pos);
-        
-		if (tileentity instanceof IInventory)
-        {
-            InventoryHelper.dropInventoryItems(worldIn, pos, (IInventory)tileentity);
-        }
-		
-		super.breakBlock(worldIn, pos, state);
 	}
 	
 	@Override

@@ -28,7 +28,7 @@ import net.minecraftforge.items.ItemStackHandler;
 
 public class TileEntityPurifier extends TileEntity implements ITickable
 {
-	private ItemStackHandler handler = new ItemStackHandler(4);
+	public ItemStackHandler handler = new ItemStackHandler(4);
 	private String customName;
 	private ItemStack smelting = ItemStack.EMPTY;
 	

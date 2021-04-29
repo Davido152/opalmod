@@ -1,4 +1,4 @@
-package github.davido152.opalmod.items.tools;
+package github.davido152.opalmod.items;
 
 import github.davido152.opalmod.OpalMod;
 import github.davido152.opalmod.init.ModItems;
@@ -6,28 +6,27 @@ import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
-import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.server.MinecraftServer;
 
-public class ToolFireSword extends ItemSword implements IHasModel
-{
+public class PureFireOpal extends Item implements IHasModel
+
+{		
 	public boolean onLeftClickEntity(ItemStack stack, EntityPlayer player, Entity entity) 
 	{
 	    if (!((Entity) (player)).world.isRemote && (!(entity instanceof EntityPlayer))) 
 	    {
-	        entity.setFire(5);
+	        entity.setFire(2);
 	    }
 	    return super.onLeftClickEntity(stack, player, entity);
 	}
-	
-	public ToolFireSword(String name, ToolMaterial material, CreativeTabs tab)
-	{
-		super(material);
+	public PureFireOpal(String name, CreativeTabs tab) 
+	{		
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(tab);
-	
+		
 		ModItems.ITEMS.add(this);
 	}
 	
@@ -36,5 +35,10 @@ public class ToolFireSword extends ItemSword implements IHasModel
 	{
 		OpalMod.proxy.registerItemRenderer(this, 0, "invemtory");
 	}
-}
-
+	
+	@Override
+	public int getItemBurnTime(ItemStack itemStack)
+	{
+		return 6400;
+	}
+} 

@@ -1,17 +1,15 @@
-package github.davido152.opalmod.items.tools;
+package github.davido152.opalmod.init;
 
 import github.davido152.opalmod.OpalMod;
-import github.davido152.opalmod.init.ModItems;
 import github.davido152.opalmod.util.interfaces.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemPickaxe;
 
-public class ToolPickaxe extends ItemPickaxe implements IHasModel 
+public class ItemBase extends Item implements IHasModel
 {
-	public ToolPickaxe(String name, ToolMaterial material, CreativeTabs tab)
+
+	public ItemBase(String name, CreativeTabs tab)
 	{
-		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(tab);
@@ -24,4 +22,5 @@ public class ToolPickaxe extends ItemPickaxe implements IHasModel
 	{
 		OpalMod.proxy.registerItemRenderer(this, 0, "invemtory");
 	}
+
 }

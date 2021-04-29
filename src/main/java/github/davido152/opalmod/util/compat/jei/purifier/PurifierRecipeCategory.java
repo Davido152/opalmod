@@ -56,8 +56,8 @@ public class PurifierRecipeCategory extends AbstractPurifierRecipeCategory<Purif
 	{
 		IGuiItemStackGroup stacks = recipeLayout.getItemStacks();
 		stacks.init(sharpening_stone, true, 27, 4);
-		stacks.init(input, true, 21, 42);
-		stacks.init(output, false, 76, 23);
+		stacks.init(input, true, 51, 4);
+		stacks.init(output, false, 51, 40);
 		stacks.set(ingredients);
 	};
 }
