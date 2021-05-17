@@ -3,11 +3,11 @@
     "textures":
     {
         "particle": "opal_mod:blocks/purifier_front_off",
-        "up": "opal_mod:blocks/purifier_top",
-        "down": "opal_mod:blocks/purifier_bottom",
+        "up": "blocks/furnace_top",
+        "down": "blocks/furnace_top",
         "north": "opal_mod:blocks/purifier_front_off",
-        "east": "opal_mod:blocks/purifier_side1",
-        "south": "opal_mod:blocks/purifier_side3",
-        "west": "opal_mod:blocks/purifier_side2"
+        "east": ":blocks/furnace_side",
+        "south": "blocks/furnace_side",
+        "west": "blocks/furnace_side"
     }
 }
