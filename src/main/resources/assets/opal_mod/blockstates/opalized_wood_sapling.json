@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "stage=0": { "model": "opal_mod:opalized_wood_sapling" },
+        "stage=1": { "model": "opal_mod:opalized_wood_sapling" }
+    }
+}

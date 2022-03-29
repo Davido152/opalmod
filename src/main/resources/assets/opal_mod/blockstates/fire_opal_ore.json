@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "opal_mod:fire_opal_ore" }
+    }
+}

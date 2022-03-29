@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "blocks/opal_mod:charred_opalized_wood_log"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants":
+    {
+        "burning=false,facing=north": { "model": "opal_mod:purifier" },
+        "burning=false,facing=east": { "model": "opal_mod:purifier", "y": 90 },
+        "burning=false,facing=south": { "model": "opal_mod:purifier", "y": 180 },
+        "burning=false,facing=west": { "model": "opal_mod:purifier", "y": 270 },
+        "burning=true,facing=north": { "model": "opal_mod:lit_purifier" },
+        "burning=true,facing=east": { "model": "opal_mod:lit_purifier", "y": 90 },
+        "burning=true,facing=south": { "model": "opal_mod:lit_purifier", "y": 180 },
+        "burning=true,facing=west": { "model": "opal_mod:lit_purifier", "y": 270 }
+    }
+}
