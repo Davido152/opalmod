@@ -1,0 +1,18 @@
+{ 
+    "type": "minecraft:crafting_shapeless",
+
+    "ingredients": 
+    [
+
+    {
+      "item": "opal_mod:opalized_wood_log"
+    }
+    
+    ],
+
+    "result": 
+    {
+        "item": "opal_mod:opalized_wood_planks",
+        "count": 4
+    }
+}

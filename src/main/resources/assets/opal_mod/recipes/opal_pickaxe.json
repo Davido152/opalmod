@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "OOO",
+        " S ",
+        " S "
+    ],
+    
+    "key":
+    {
+        "O":
+        {
+            "item": "opal_mod:pure_opal"
+        },
+       
+        "S":
+        {
+            "type": "forge:ore_dict",
+            "ore": "woodStick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "opal_mod:opal_pickaxe",
+        "count": 1
+    }
+}

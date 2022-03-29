@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "FF",
+        "S ",
+        "S "
+    ],
+    
+    "key":
+    {
+        "F":
+        {
+            "item": "opal_mod:pure_fire_opal"
+        },
+       
+        "S":
+        {
+            "type": "forge:ore_dict",
+            "ore": "woodStick"
+        }
+    },
+    
+    "result":
+    {
+        "item": "opal_mod:fire_opal_hoe",
+        "count": 1
+    }
+}
