@@ -1,9 +1,0 @@
-{
-    "parent": "block/cube_bottom_top",
-    "textures": {
-        "particle": "blocks/dirt",
-        "bottom": "blocks/dirt",
-        "top": "opal_mod:blocks/dusty_dirt_top",
-        "side": "opal_mod:blocks/dusty_dirt_side"
-    }
-}

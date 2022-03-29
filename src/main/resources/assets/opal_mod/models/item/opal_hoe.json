@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "opal_mod:items/opal_hoe"
-    }
-}

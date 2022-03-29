@@ -1,6 +1,0 @@
-{
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "opal_mod:blocks/matrix_opal_block"
-   }
-}

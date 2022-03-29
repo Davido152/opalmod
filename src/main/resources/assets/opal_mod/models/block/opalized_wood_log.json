@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "opal_mod:blocks/opalized_wood_log_top",
-        "side": "opal_mod:blocks/opalized_wood_log"
-    }
-}

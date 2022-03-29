@@ -1,6 +1,0 @@
-{
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "opal_mod:blocks/fire_opal_ore"
-   }
-}
